@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="label">New Year's Countdown</h1>
+        <div class="units">
+            <div class="unit">
+                <span id="month">00</span>
+                <p>Months</p>
+            </div>
+            
+            <div class="unit">
+                <span id="day">00</span>
+                <p>Days</p>
+            </div>
+            
+            <div class="unit">
+                <span id="hour">00</span>
+                <p>Hours</p>
+            </div>
+            
+            <div class="unit">
+                <span id="minute">00</span>
+                <p>Minutes</p>
+            </div>
+            
+            <div class="unit">
+                <span id="second">00</span>
+                <p>Seconds</p>
+            </div>
+        </div>
+
+        <div class="age-container">
+            <h2 class="age-label">Your Age:</h2>
+
+            <div class="age-unit">
+                <span id="age-year">00</span>
+                <p>Years</p>
+            </div>
+            
+            <div class="age-unit">
+                <span id="age-month">00</span>
+                <p>Months</p>
+            </div>
+            
+            <div class="age-unit">
+                <span id="age-day">00</span>
+                <p>Days</p>
+            </div>
+
+        </div>
+
+        <div class="date-choice">
+            <label>Check for your birthday/age</label>
+            <input placeholder="12/31/2022" type="text" class="date-input">
+            <button class="date-button">Apply</button>
+
+        </div>
+        <div class="date-error">
+            <span>Invalid Date</span>
+        </div>
+    
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

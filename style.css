@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./colors-background.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin-top: 78px; 
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.age-container {
+    margin-top: 30px;
+    padding: 10px 0 10px 20px;
+    display: flex;
+    opacity: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(85, 10, 10, 0.3);
+    transition: 1s;
+}
+
+.age-label {
+    margin-right: 25px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.age-unit {
+    user-select: none;
+    margin: 0 30px;
+    font-weight: bold;
+}
+
+.age-unit span {
+    font-weight: normal;
+    font-size: 70px;
+}
+
+.units {
+    user-select: none;
+    background: rgba(85, 10, 10, 0.3);
+    height: 200px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unit {
+    margin: 0 50px;
+    font-weight: bold;
+}
+
+.unit span {
+    font-weight: normal;
+    font-size: 100px;
+}
+
+.date-choice {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 70%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    background: rgba(85, 10, 10, 0.3);
+    padding: 20px 0;
+    border-radius: 100px;
+}
+
+.date-choice label {
+    width: 60%;
+    text-align: center;
+}
+
+.date-input {
+    opacity: 0.5;
+    width: 43%;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.date-button {
+    width: 30%;
+    border: none;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(209, 0, 0, 0.796);
+    color: white;
+    cursor: pointer;
+}
+
+.date-error {
+    position: absolute;
+    left: 2%;
+    top: 70%;
+    width: 200px;
+    height: 200px;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px 0;
+    border-radius: 100px;
+    align-items: center;
+    background: rgba(85, 10, 10, 0.3);
+    justify-content: center;
+    display: none;
+}
+
+@media (max-width: 500px){
+    .label {
+        margin-top: 30px;
+        font-size: 30px;
+    }
+
+    .units {
+        height: 80px;
+        margin-top: 20px;
+    }
+
+    .unit {
+        margin: 0 20px;
+        font-size: 10px;
+    }
+
+    .unit span {
+        font-size: 30px;
+    }
+
+    .age-container {
+        width: 90%;
+        font-size: 10px;
+    }
+
+    .age-label {
+        font-size: 20px;
+    }
+
+    .age-unit {
+        margin: 0 20px;
+    }
+
+    .age-unit span {
+        font-size: 30px;
+    }
+
+    .date-choice, .date-error {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+}
