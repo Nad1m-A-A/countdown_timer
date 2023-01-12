@@ -33,6 +33,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgba(85, 10, 10, 0.3);
+    border-radius: 5px;
     transition: 1s;
 }
 
@@ -56,6 +57,7 @@ body {
 .units {
     user-select: none;
     background: rgba(85, 10, 10, 0.3);
+    border-radius: 5px;
     height: 200px;
     margin-top: 40px;
     display: flex;
