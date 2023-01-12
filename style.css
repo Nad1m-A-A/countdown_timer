@@ -44,12 +44,14 @@ body {
 }
 
 .age-unit {
+    color: white;
     user-select: none;
     margin: 0 30px;
     font-weight: bold;
 }
 
 .age-unit span {
+    color: black;
     font-weight: normal;
     font-size: 70px;
 }
@@ -66,11 +68,14 @@ body {
 }
 
 .unit {
+    
     margin: 0 50px;
     font-weight: bold;
+    color: white;
 }
 
 .unit span {
+    color: black;
     font-weight: normal;
     font-size: 100px;
 }
