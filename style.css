@@ -14,15 +14,15 @@ body {
 }
 
     .main {
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: flex-start;
+        row-gap: 2rem;
         padding: 0 2rem 2rem;
     }
 
     .units, .age-container {
-        margin-top: 40px;
         background: rgba(85, 10, 10, 0.5);
         box-shadow: 0px 1px 10px black;
         border-radius: 5px;
@@ -33,7 +33,7 @@ body {
         align-items: center;
     }
     .label, .age-label {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: normal;
     }
     .age-label {
@@ -72,12 +72,11 @@ body {
     .age-unit {
         color: white;
         user-select: none;
-        font-weight: bold;
     }
 
     .label {
         color: #222;
-        margin-top: 78px;
+        margin-top: 4rem;
     }
     .units {
         padding: 1.5rem 2rem;
@@ -86,7 +85,6 @@ body {
     }
     .unit {
         color: white;
-        font-weight: bold;
     }
 
     .date-choice, .date-error {
@@ -101,7 +99,6 @@ body {
         background: rgba(85, 10, 10);
         box-shadow: 0px 1px 10px black;
         border-radius: 100px;
-        margin-top: 2rem;
         padding: 20px 0;
     }
     .date-error {
@@ -137,7 +134,7 @@ body {
 
 @media screen and (min-width: 700px) {
     .label {
-        font-size: 40px;
+        font-size: 45px;
     }
     .age-label {
         font-size: 26px;
@@ -153,5 +150,11 @@ body {
     }
     .age-unit p {
         font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .label {
+        margin-top: 3rem;
     }
 }
